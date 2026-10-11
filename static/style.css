@@ -1,0 +1,23 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f4f7fb; color: #1d2b3a; font-family: Arial, sans-serif; }
+header, footer { background: #123b5d; color: #fff; padding: 18px max(6vw, 24px); }
+header a { color: #fff; text-decoration: none; font-weight: 700; font-size: 18px; }
+main { width: min(800px, 90%); margin: 36px auto; }
+footer { text-align: center; font-size: 13px; margin-top: 40px; }
+.card { background: #fff; border-radius: 14px; padding: 30px; margin: 20px 0; box-shadow: 0 5px 20px #17304b14; }
+.hero { text-align: center; padding: 42px; }
+.eyebrow { color: #177b92; font-size: 12px; font-weight: 700; letter-spacing: 1px; }
+.form-card label { display: block; font-weight: 700; margin: 17px 0; }
+.form-card input, .form-card textarea, textarea { display: block; width: 100%; margin-top: 7px; padding: 12px; border: 1px solid #c8d4df; border-radius: 8px; font: inherit; resize: vertical; }
+small, .muted { color: #647789; font-weight: 400; font-size: 12px; }
+button, .button-link { background: #167b92; color: #fff; border: 0; border-radius: 8px; padding: 13px 18px; font-weight: 700; cursor: pointer; text-decoration: none; display: inline-block; }
+button:hover, .button-link:hover { background: #105e71; }
+.flash { background: #fff3cd; border: 1px solid #ffda74; padding: 12px; border-radius: 8px; }
+.progress { height: 10px; background: #d9e4ea; border-radius: 10px; overflow: hidden; }
+.progress span { display: block; height: 100%; background: #167b92; }
+.topic, .tip { color: #17657a; }
+.answer-head { display: flex; justify-content: space-between; gap: 10px; align-items: center; }
+.answer-head strong { background: #e3f2f5; padding: 8px; border-radius: 7px; color: #126174; }
+.score { font-size: 64px; font-weight: 700; color: #167b92; margin: 12px; }
+.score small { font-size: 22px; }
+@media (max-width: 520px) { main { width: 94%; margin: 20px auto; } .card { padding: 20px; } .hero { padding: 28px 18px; } }

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="card hero">
+  <p class="eyebrow">INTERVIEW COMPLETE</p>
+  <h1>Well done, {{ candidate }}!</h1>
+  <p>Your average score for the {{ role }} practice interview is</p>
+  <div class="score">{{ average }}<small>/10</small></div>
+  <a class="button-link" href="{{ url_for('index') }}">Start another interview</a>
+</section>
+{% for item in answers %}
+<article class="card answer-card">
+  <div class="answer-head"><h2>{{ loop.index }}. {{ item.topic }}</h2><strong>{{ item.score }}/10</strong></div>
+  <p><b>Question:</b> {{ item.question }}</p>
+  <p><b>Your answer:</b> {{ item.answer }}</p>
+  <p><b>Feedback:</b> {{ item.feedback }}</p>
+  <p class="tip"><b>Next time:</b> {{ item.improved_answer_tip }}</p>
+</article>
+{% endfor %}
+{% endblock %}

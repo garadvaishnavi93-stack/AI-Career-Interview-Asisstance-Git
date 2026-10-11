@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="card hero">
+  <p class="eyebrow">PRACTICE WITH PURPOSE</p>
+  <h1>AI Career &amp; Interview Assistant</h1>
+  <p>Prepare for your next role with tailored questions and helpful feedback.</p>
+</section>
+<form class="card form-card" method="post" enctype="multipart/form-data">
+  <label>Your name<input name="name" required placeholder="e.g., Priya Sharma"></label>
+  <label>Target job role<input name="role" required placeholder="e.g., Python Developer"></label>
+  <label>Job description (optional)<textarea name="job_description" rows="5" placeholder="Paste the main job requirements here..."></textarea></label>
+  <label>Resume PDF (optional)<input name="resume" type="file" accept="application/pdf">
+    <small>Text-based PDFs work best. Your resume is used only to create this interview, then deleted from the server.</small>
+  </label>
+  <button type="submit">Create my interview</button>
+</form>
+{% endblock %}
